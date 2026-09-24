@@ -16,13 +16,22 @@ namespace SnakeWPF
         public ViewModelGames ViewModelGames = null;
         public static IPAddress remoteIPAddress = IPAddress.Parse("127.0.0.1");
         public static int remotePort = 5001;
+
         public Thread tRec;
         public UdpClient receivingUdpClient;
+
         public Pages.Home Home = new Pages.Home();
         public Pages.Game Game = new Pages.Game();
         public MainWindow()
         {
             InitializeComponent();
+            mainWindow = this;
+        }
+        public void StartReceiver()
+        {
+            tRec = new Thread(new ThreadStart(Receiver));
+            tRec.Start();
+
         }
     }
 }
