@@ -109,9 +109,21 @@ namespace Snake_Ostanin
             }
         }
 
-        private static int AddSnake()
+        public static int AddSnake()
         {
-            throw new NotImplementedException();
+            ViewModelGames viewModelGamesPlayer = new ViewModelGames();
+            viewModelGamesPlayer.SnakesPlayers = new Snakes()
+            {
+                Points = new List<Snakes.Point>() {
+                    new Snakes.Point() {X = 30, Y = 10},
+                    new Snakes.Point() {X = 20, Y = 10},
+                    new Snakes.Point() {X = 10, Y = 10}
+                },
+                direction = Snakes.Direction.Start
+            };
+            viewModelGamesPlayer.Points = new Snakes.Point(new Random().Next(10, 783), new Random().Next(10, 410));
+            viewModelGames.Add(viewModelGamesPlayer);
+            return viewModelGames.FindIndex(x => x == viewModelGamesPlayer);
         }
     }
 }
