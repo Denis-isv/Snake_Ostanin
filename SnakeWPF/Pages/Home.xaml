@@ -10,12 +10,12 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Image/background_3.jpg"/>
+            <ImageBrush ImageSource="/Image/backgorund_1.jpg"/>
         </Grid.Background>
         <Grid>
             <Grid Width="320" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <Grid.Background>
-                    <ImageBrush ImageSource="/Image/background_2.png"/>
+                    <ImageBrush ImageSource="/Image/backgorund_3.jpg"/>
                 </Grid.Background>
 
                 <Label 
