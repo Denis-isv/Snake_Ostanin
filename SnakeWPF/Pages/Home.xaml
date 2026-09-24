@@ -51,7 +51,7 @@
                 Width="155" 
                 VerticalContentAlignment="Center" 
                 HorizontalContentAlignment="Center" 
-                FontFamily="Forte"/>
+                FontFamily="Forte" TextChanged="ip_TextChanged"/>
                 <TextBox x:Name="port" 
                 HorizontalAlignment="Left" 
                 Height="25" 
@@ -68,7 +68,7 @@
                 Height="25" 
                 Margin="42,118,0,0" 
                 TextWrapping="Wrap" 
-                Text="Tony Montana" 
+                Text="Deniskhim" 
                 VerticalAlignment="Top" 
                 Width="234" 
                 VerticalContentAlignment="Center" 
