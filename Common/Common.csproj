@@ -45,6 +45,7 @@
     <Compile Include="Snakes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModellGames.cs" />
+    <Compile Include="ViewModellUserSettings.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
